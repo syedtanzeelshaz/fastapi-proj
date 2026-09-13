@@ -7,7 +7,14 @@ authors = [
     { name = "syedtanzeelshaz", email = "syedtanzeelshaz@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastapi>=0.141.1",
+    "fastapi-users[sqlalchemy]>=15.0.5",
+    "imagekitio>=5.9.0",
+    "python-dotenv>=1.2.3",
+    "uvicorn[standard]>=0.52.4",
+]
 
 [project.scripts]
 fastapi-proj = "fastapi_proj:main"
